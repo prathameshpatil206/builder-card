@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  color: #f1f5f9;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.app {
+  width: 90%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* Header */
+
+.header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.header h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.header h1 span {
+  color: #60a5fa;
+}
+
+.header p {
+  color: #94a3b8;
+}
+
+/* Search */
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  flex: 1;
+  min-width: 0;
+  padding: 15px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #1e293b;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: #60a5fa;
+}
+
+.search-box button {
+  padding: 15px 25px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #1d4ed8;
+}
+
+.search-box button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Status */
+
+.status {
+  text-align: center;
+  color: #60a5fa;
+  margin: 20px;
+}
+
+.error {
+  text-align: center;
+  color: #f87171;
+  margin: 20px;
+}
+
+/* Profile Card */
+
+.profile-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Header */
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.profile-header img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid #60a5fa;
+  object-fit: cover;
+}
+
+.profile-header h2 {
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+.profile-header p {
+  color: #cbd5e1;
+  margin-top: 7px;
+}
+
+.username {
+  color: #60a5fa !important;
+}
+
+/* Stats */
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: #0f172a;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.stats h3 {
+  font-size: 24px;
+  color: #60a5fa;
+}
+
+.stats p {
+  color: #94a3b8;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* GitHub Link */
+
+.github-link {
+  display: block;
+  text-align: center;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.github-link:hover {
+  background: #1d4ed8;
+}
+
+/* Sections */
+
+.section {
+  margin-top: 30px;
+}
+
+.section h3 {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+/* Repositories */
+
+.repo {
+  padding: 15px;
+  background: #0f172a;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.repo a {
+  color: #60a5fa;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.repo a:hover {
+  text-decoration: underline;
+}
+
+.repo p {
+  color: #cbd5e1;
+  margin: 8px 0;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.repo small {
+  color: #94a3b8;
+}
+
+/* Languages */
+
+.language {
+  margin-bottom: 18px;
+}
+
+.language-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.language-info span:last-child {
+  color: #60a5fa;
+}
+
+.progress {
+  height: 8px;
+  background: #334155;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #3b82f6;
+  border-radius: 10px;
+}
+
+/* Activity */
+
+.activity {
+  padding: 15px;
+  background: #0f172a;
+  border-left: 3px solid #3b82f6;
+  margin-bottom: 12px;
+  border-radius: 5px;
+}
+
+.activity p {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.activity small {
+  display: block;
+  color: #94a3b8;
+  margin-top: 5px;
+}
+
+.muted {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  color: #64748b;
+  margin-top: 35px;
+  font-size: 13px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .app {
+    width: 94%;
+    padding: 30px 0;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .stats h3 {
+    font-size: 20px;
+  }
+}
